@@ -153,7 +153,7 @@ export default defineConfig({
   base: '',
 
   optimizeDeps: {
-    entries: ['index.html', 'chat.html']
+    entries: ['index.html', '1337.html']
   },
 
   build: {
@@ -166,7 +166,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: resolve(rootDir, 'index.html'),
-        chat: resolve(rootDir, 'chat.html')
+        chat: resolve(rootDir, '1337.html')
       },
       output: {
         sourcemapIgnoreList: serverOptions.sourcemapIgnoreList
